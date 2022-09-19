@@ -1,0 +1,124 @@
+{
+  "applicant": [
+    {
+      "id": 1,
+      "title": "Total Applicant",
+      "total": 1202,
+      "months": "During 3 Month",
+      "progress": 75,
+      "color": "#6c5bd1"
+    },
+    {
+      "id": 2,
+      "title": "Invited Interview",
+      "total": 1270,
+      "months": "During 6 Month",
+      "progress": 65,
+      "color": "#bf55ec"
+    },
+    {
+      "id": 3,
+      "title": "Total Post",
+      "total": 1020,
+      "months": "During 8 Month",
+      "progress": 55,
+      "color": "#ff1ab1"
+    }
+  ],
+
+  "profile": [
+    {
+      "id": 4,
+      "profileColor": "rgb(2, 224, 224)",
+      "name": "Kristin Watson",
+      "email": "alma.lawson@gmail.com",
+      "image": "images/man-png-30098.png"
+    },
+    {
+      "id": 5,
+      "profileColor": "rgb(255, 115, 0)",
+      "name": "Jenny Wilson",
+      "email": "kenzil.lawson@example.com",
+      "image": "images/adh.png"
+    },
+    {
+      "id": 6,
+      "profileColor": " rgb(0, 240, 72)",
+      "name": "Darrel Steward",
+      "email": "georgia.young@gmail.com",
+      "image": "images/man.png"
+    }
+  ],
+
+  "interview": [
+    {
+      "id": 7,
+      "picture": "images/male.png",
+      "candidateName": "Thamas Alva",
+      "postName": "Developer",
+      "designation": "Backend",
+      "time": "11:30 AM",
+      "status": "Incompleted"
+    },
+    {
+      "id": 8,
+      "picture": "images/male.png",
+      "candidateName": "Masum Billah",
+      "postName": "Designer",
+      "designation": "UI/UX",
+      "time": "12:00 PM",
+      "status": "Completed"
+    },
+    {
+      "id": 9,
+      "picture": "images/male.png",
+      "candidateName": "Smith Lives",
+      "postName": "Content Writer",
+      "designation": "Writer",
+      "time": "12:30 PM",
+      "status": "Processing"
+    }
+  ],
+
+  "job": [
+    {
+      "id": 10,
+      "jobName": "UI/UX Designer",
+      "image": "images/ui.png",
+      "description": "Globex Corporation",
+      "color": {
+        "orange": "rgb(255, 165, 0)",
+        "green": "#4dd637"
+      }
+    },
+    {
+      "id": 11,
+      "jobName": "Web Developer",
+      "image": "images/ui.png",
+      "description": "Sterling Copper",
+      "color": {
+        "orange": "rgb(255, 165, 0)",
+        "green": "#4dd637"
+      }
+    }
+  ],
+
+  "board": [
+    {
+      "id": 12,
+      "image": "images/2.png"
+    },
+    {
+      "id": 13,
+      "image": "images/3.png"
+    },
+    {
+      "id": 14,
+      "image": "images/4.png"
+    },
+    {
+      "id": 15,
+      "image": "images/5.png"
+    }
+  ]
+}
