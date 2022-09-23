@@ -29,7 +29,7 @@ const ProfileInfo: React.FC = () => {
       setProfile(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getProfile();
-  }, []);
+  }, [profileCollectionRef]);
   return (
     <StyledCard
       sx={{

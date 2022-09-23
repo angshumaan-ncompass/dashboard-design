@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { theme } from "../theme";
-import { Applicantt, dashBoardData, DashBoardType } from "../Api";
+import { Applicantt } from "../Api";
 import { db } from "../firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import {
@@ -20,7 +20,7 @@ const Applicant: React.FC = () => {
       setApplicant(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getApplicant();
-  }, []);
+  }, [applicantCollectionRef]);
 
   return (
     <StyledCard>

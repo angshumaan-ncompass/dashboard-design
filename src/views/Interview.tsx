@@ -40,7 +40,7 @@ const Interview: React.FC = () => {
       setInterview(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getInterview();
-  }, []);
+  }, [interviewCollectionRef]);
   return (
     <TableContainer component={Paper} sx={sxTableContainer}>
       <Box sx={sxBoxData}>

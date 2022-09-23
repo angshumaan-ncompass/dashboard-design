@@ -41,7 +41,7 @@ const RightBar: React.FC = () => {
       setJob(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getJob();
-  }, []);
+  }, [jobCollectionRef]);
   return (
     <StyledBox>
       <Stack

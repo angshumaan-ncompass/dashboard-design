@@ -29,7 +29,7 @@ const Instructor: React.FC = () => {
       setAvatar(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getInstructor();
-  }, []);
+  }, [instructorCollectionRef]);
 
   return (
     <StyledCardBox>
