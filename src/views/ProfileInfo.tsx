@@ -83,12 +83,42 @@ const ProfileInfo: React.FC = () => {
                   </StyleBackgroundColorCircle>
                 </StyledItem>
 
-                <StyledCardData>
-                  <StyledH4>{data.name}</StyledH4>
+                <StyledCardData
+                  sx={{
+                    fontSize: {
+                      xs: "0.9rem",
+                      sm: "0.9rem",
+                      md: "0.9rem",
+                      lg: "1.2rem",
+                      xl: "1.2rem",
+                    },
+                  }}
+                >
+                  <StyledH4
+                    sx={{
+                      fontSize: {
+                        xs: "0.9rem",
+                        sm: "0.9rem",
+                        md: "0.9rem",
+                        lg: "1.2rem",
+                        xl: "1.2rem",
+                      },
+                    }}
+                  >
+                    {data.name}
+                  </StyledH4>
                   <StyledCardTypography>{data.email}</StyledCardTypography>
                   <StyledCardTypography>Total Points 530</StyledCardTypography>
                 </StyledCardData>
-                <StyledButton>View Details</StyledButton>
+                <StyledButton
+                  sx={{
+                    fontSize: {
+                      xs: 14,
+                    },
+                  }}
+                >
+                  View Details
+                </StyledButton>
               </StyledList>
             </StyledContent>
           );

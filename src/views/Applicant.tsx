@@ -23,7 +23,17 @@ const Applicant: React.FC = () => {
   }, [applicantCollectionRef]);
 
   return (
-    <StyledCard>
+    <StyledCard
+      sx={{
+        flex: {
+          xs: "0 ",
+          sm: "0",
+          md: "2",
+          lg: "2",
+          xl: "2",
+        },
+      }}
+    >
       {applicant.map((data: Applicantt) => {
         return (
           <Box
@@ -34,32 +44,50 @@ const Applicant: React.FC = () => {
             gap="1rem"
             flexWrap="wrap"
             flex="0 5 auto"
-            // sx={{
-            //   flex: {
-            //     xs: "0 ",
-            //     sm: "0",
-            //     md: "1",
-            //     lg: "1",
-            //     xl: "1",
-            //   },
-            // }}
           >
             <Stack flexWrap="wrap" flex="1 10 auto">
               <Typography
                 variant="caption"
-                sx={{ color: theme.palette.primary.light, fontSize: "0.7rem" }}
+                sx={{
+                  color: theme.palette.primary.light,
+                  fontSize: {
+                    xs: "0.7rem",
+                    sm: "0.7rem",
+                    md: "0.7rem",
+                    lg: "0.7rem",
+                    xl: "1rem",
+                  },
+                }}
               >
                 {data.title}
               </Typography>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: "500", fontSize: "1.3rem" }}
+                sx={{
+                  fontWeight: "500",
+                  fontSize: {
+                    xs: "1.3rem",
+                    sm: "1.3rem",
+                    md: "1.3rem",
+                    lg: "1.3rem",
+                    xl: "2rem",
+                  },
+                }}
               >
                 {data.total}
               </Typography>
               <Typography
                 variant="caption"
-                sx={{ color: theme.palette.primary.light }}
+                sx={{
+                  color: theme.palette.primary.light,
+                  fontSize: {
+                    xs: "0.7rem",
+                    sm: "0.7rem",
+                    md: "0.7rem",
+                    lg: "0.7rem",
+                    xl: "1rem",
+                  },
+                }}
               >
                 {data.months}
               </Typography>

@@ -4,6 +4,7 @@ import { theme } from "../theme";
 export const sxTableContainer = {
   borderRadius: "10px",
   backgroundColor: "#2e2e2e",
+  paddingTop: "2rem",
 
   flex: {
     xs: "0",
@@ -25,7 +26,7 @@ export const sxBoxData = {
   pl: "1.5rem",
   pr: "1.5rem",
   pt: "0.9rem",
-  pb: "0.9rem",
+  // pb: "0.9rem",
   backgroundColor: "#2e2e2e",
 };
 
@@ -67,6 +68,13 @@ export const sxTableRowHead = {
   "&:nth-child(1) th": {
     borderColor: theme.palette.secondary.dark,
     paddingLeft: "1.5rem",
+    fontSize: {
+      xs: "0.6rem",
+      sm: "0.6rem",
+      md: "0.6rem",
+      lg: "0.6rem",
+      xl: "1rem",
+    },
   },
 };
 
@@ -97,12 +105,26 @@ export const sxTableRowChild = {
     pb: "0.3rem",
     pl: "0.4rem",
     pr: "0.5rem",
-    fontSize: "0.6rem",
+    // fontSize: "0.6rem",
+
+    fontSize: {
+      xs: "0.6rem",
+      sm: "0.6rem",
+      md: "0.6rem",
+      lg: "0.6rem",
+      xl: "1rem",
+    },
   },
   "&:nth-child(1) > td:nth-child(5) .MuiTypography-caption": {
     backgroundColor: "#1b97f52c",
     color: "#1b98f5",
-    fontSize: "0.6rem",
+    fontSize: {
+      xs: "0.6rem",
+      sm: "0.6rem",
+      md: "0.6rem",
+      lg: "0.6rem",
+      xl: "1rem",
+    },
   },
   "&:nth-child(2) > td:nth-child(5) .MuiTypography-caption": {
     backgroundColor: "#4cd63738",
@@ -116,5 +138,14 @@ export const sxTableRowChild = {
   },
 };
 
-export const sxTableCell = { fontSize: "0.8rem" };
+export const sxTableCell = {
+  // fontSize: "0.8rem",
+  fontSize: {
+    xs: "0.8rem",
+    sm: "0.8rem",
+    md: "0.8rem",
+    lg: "0.8rem",
+    xl: "1.2rem",
+  },
+};
 export const sxAvatar = { width: "20%", height: "20%" };

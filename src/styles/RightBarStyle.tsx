@@ -56,9 +56,20 @@ export const StyledCardContent = styled(Box)({
   display: "flex",
   flexDirection: "row",
   width: "80%",
+  paddingLeft: "0.8rem",
 });
 
-export const sxCardMedia = { width: "67%", borderRadius: "10px" };
+export const sxCardMedia = {
+  borderRadius: "10px",
+  width: "2.8rem",
+  // width: {
+  //   xl: "67%",
+  //   lg: "67%",
+  //   md: "67%",
+  //   sm: "0",
+  //   xs: "0",
+  // },
+};
 
 export const sxCardContent = {
   flex: "1 0 auto",
@@ -83,7 +94,7 @@ export const StyledButton = styled(Button)({
 export const sxCardicon = { pt: "5px", p: 0 };
 
 export const sxCardImage = {
-  width: "70%",
+  width: "2.8rem",
   borderRadius: "10px",
   margin: "auto",
 };

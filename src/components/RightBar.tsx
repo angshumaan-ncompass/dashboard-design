@@ -68,6 +68,7 @@ const RightBar: React.FC = () => {
                 flexWrap={"wrap"}
                 // pt={"15px"}
                 height="100%"
+                pl="0.5rem"
               >
                 <CardMedia
                   component="img"
@@ -77,12 +78,21 @@ const RightBar: React.FC = () => {
                 />
               </Stack>
               <CardContent sx={sxCardContent}>
-                <Box>
+                <Box pl="1rem" pr="1rem">
                   <Typography
                     component="div"
                     variant="subtitle1"
                     color={theme.palette.primary.main}
-                    fontSize="0.8rem"
+                    // fontSize="0.8rem"
+                    sx={{
+                      fontSize: {
+                        xs: "0.8rem",
+                        sm: "0.8rem",
+                        md: "0.8rem",
+                        lg: "0.8rem",
+                        xl: "1rem",
+                      },
+                    }}
                   >
                     {data.jobName}
                   </Typography>
@@ -91,6 +101,15 @@ const RightBar: React.FC = () => {
                     component="div"
                     color={theme.palette.primary.light}
                     fontSize={"0.53rem"}
+                    sx={{
+                      fontSize: {
+                        xs: "0.53rem",
+                        sm: "0.53rem",
+                        md: "0.53rem",
+                        lg: "0.53rem",
+                        xl: "0.69rem",
+                      },
+                    }}
                   >
                     {data.description}
                   </Typography>
@@ -120,7 +139,11 @@ const RightBar: React.FC = () => {
         );
       })}
 
-      <StyledCard sx={{ maxHeight: "50px" }}>
+      <StyledCard
+        sx={{
+          maxHeight: "50px",
+        }}
+      >
         <StyledCardContent>
           <Stack justifyContent={"space-around"} alignItems={"flex-start"}>
             <CardMedia
@@ -131,12 +154,20 @@ const RightBar: React.FC = () => {
             />
           </Stack>
           <CardContent sx={sxCardData}>
-            <Box>
+            <Box pl="0.8rem" pr="1rem">
               <Typography
                 component="div"
                 variant="subtitle1"
                 color={theme.palette.primary.main}
-                fontSize={"0.8rem"}
+                sx={{
+                  fontSize: {
+                    xs: "0.8rem",
+                    sm: "0.8rem",
+                    md: "0.8rem",
+                    lg: "0.8rem",
+                    xl: "0.9rem",
+                  },
+                }}
               >
                 Graphic Designer
               </Typography>
