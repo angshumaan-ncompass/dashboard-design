@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ui from "../assets/images/ui.png";
 import { MoreHoriz } from "@mui/icons-material";
 import { theme } from "../theme";
-import { dashBoardData, Job } from "../Api";
+import { Job } from "../Api";
 import {
   Box,
   CardActions,
@@ -57,7 +57,7 @@ const RightBar: React.FC = () => {
           SEE ALL
         </Typography>
       </Stack>
-      {dashBoardData.job.map((data: Job) => {
+      {job.map((data: Job) => {
         return (
           <StyledCard key={data.id}>
             <Box sx={sxBox}>

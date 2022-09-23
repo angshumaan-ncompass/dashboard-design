@@ -1,6 +1,6 @@
 import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
-import { dashBoardData, Profile } from "../Api";
+import { Profile } from "../Api";
 import { db } from "../firebase-config";
 import {
   StyleBackgroundColorCircle,
@@ -48,7 +48,7 @@ const ProfileInfo: React.FC = () => {
       }}
     >
       <StyledHeader>
-        {dashBoardData.profile.map((data: Profile) => {
+        {profile.map((data: Profile) => {
           return (
             <StyledContent
               sx={{

@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
-import { Board, dashBoardData } from "../Api";
+import { Board } from "../Api";
 import { db } from "../firebase-config";
 import {
   StyledCardBox,
@@ -66,7 +66,7 @@ const Instructor: React.FC = () => {
         // gap={"0.7rem"}
         flexWrap="wrap"
       >
-        {dashBoardData.board.map((item: Board) => {
+        {avatar.map((item: Board) => {
           return (
             <Avatar
               key={item.id}
