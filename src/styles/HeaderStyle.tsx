@@ -123,6 +123,10 @@ export const StyledBoxContent = styled(Box)(() => ({
 export const sxStackInput = {
   paddingTop: "10px",
   paddingBottom: "10px",
+  width: {
+    xs: "100%",
+    sm: "inherit",
+  },
   // display: { xs: "none", sm: "none", md: "none", lg: "flex" },
 };
 

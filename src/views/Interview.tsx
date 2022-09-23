@@ -26,7 +26,7 @@ import {
   sxTableRowChild,
   sxTableRowHead,
 } from "../styles/InterviewStyle";
-import { Intervieww } from "../Api";
+import { dashBoardData, Intervieww } from "../Api";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase-config";
 
@@ -81,7 +81,7 @@ const Interview: React.FC = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {interview.map((row: Intervieww) => (
+          {dashBoardData.interview.map((row: Intervieww) => (
             <TableRow hover={true} key={row.candidateName} sx={sxTableRowChild}>
               <TableCell component="th" scope="row" sx={sxTableCell}>
                 <Stack

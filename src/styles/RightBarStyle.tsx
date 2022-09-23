@@ -90,7 +90,7 @@ export const sxCardImage = {
 
 export const sxCardData = {
   flex: "1 0 auto",
-  "&:last-child": { pr: "0px", pt: "10px", pb: "10px" },
+  "&:last-child": { pr: "22px", pt: "10px", pb: "10px" },
   pl: "0.3rem",
 };
 
