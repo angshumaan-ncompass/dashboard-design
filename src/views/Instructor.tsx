@@ -7,8 +7,10 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React from "react";
-import { Board, dashBoardData } from "../Api";
+import { collection, getDocs } from "firebase/firestore";
+import React, { useEffect, useState } from "react";
+import { Board } from "../Api";
+import { db } from "../firebase-config";
 import {
   StyledCardBox,
   sxAvatar,
@@ -18,6 +20,17 @@ import {
 import { theme } from "../theme";
 
 const Instructor: React.FC = () => {
+  const [avatar, setAvatar] = useState<any>([]);
+  const instructorCollectionRef = collection(db, "instructor");
+
+  useEffect(() => {
+    const getInstructor = async () => {
+      const data = await getDocs(instructorCollectionRef);
+      setAvatar(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getInstructor();
+  }, []);
+
   return (
     <StyledCardBox>
       <Stack
@@ -25,7 +38,7 @@ const Instructor: React.FC = () => {
         flexWrap={"wrap"}
         justifyContent={"space-around"}
         width="100%"
-        margin="auto"
+        // margin="auto"
         pt="10px"
       >
         <CardContent sx={sxContent}>
@@ -53,7 +66,7 @@ const Instructor: React.FC = () => {
         // gap={"0.7rem"}
         flexWrap="wrap"
       >
-        {dashBoardData.board.map((item: Board) => {
+        {avatar.map((item: Board) => {
           return (
             <Avatar
               key={item.id}

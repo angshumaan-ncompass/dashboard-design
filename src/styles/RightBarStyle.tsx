@@ -11,16 +11,24 @@ export const StyledBox = styled(Box)(
     flex: 2,
     gap: "0.79rem",
     display: "flex",
-    boxShadow:
-      "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+
     flexDirection: "column",
     justifyContent: "flex-start",
     alignItems: "flex-start",
     flexWrap: "wrap",
     bgcolor: "#413e3e00",
-    height: "100%",
-    py: "1px",
-    px: 2,
+    // height: "100%",
+    pt: "10px",
+    pb: "10px",
+    pr: "16px",
+    pl: "16px",
+    height: {
+      xs: "100%",
+      sm: "100%",
+      md: "90vh",
+      lg: "90vh",
+      xl: "90vh",
+    },
   })
 );
 
@@ -28,6 +36,10 @@ export const sxBox = {
   display: "flex",
   flexDirection: "row",
   width: "80%",
+  // height: "80%",
+  // flexWrap: "wrap",
+  paddingTop: "10px",
+  paddingBottom: "10px",
 };
 export const StyledCard = styled(Card)({
   display: "flex",
@@ -36,6 +48,8 @@ export const StyledCard = styled(Card)({
   width: "100%",
   borderRadius: "10px",
   flexWrap: "wrap",
+  flex: 0.2,
+  alignItems: "center",
 });
 
 export const StyledCardContent = styled(Box)({
@@ -48,7 +62,8 @@ export const sxCardMedia = { width: "67%", borderRadius: "10px" };
 
 export const sxCardContent = {
   flex: "1 0 auto",
-  "&:last-child": { pb: "10px", pl: "0.3rem", pt: "1.1rem" },
+  "&:last-child": { p: 0 },
+  // pb: "10px", pl: "0.3rem", pt: "1.1rem"
   display: {
     sx: "none",
   },

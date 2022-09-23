@@ -3,7 +3,6 @@ import {
   ListItem,
   styled,
   experimental_sx as sx,
-  AppBar,
   Toolbar,
   MenuList,
 } from "@mui/material";
@@ -30,15 +29,17 @@ export const StyledBox = styled(Box)(
       lg: "block",
       xl: "block",
     },
-    height: "653px",
+    height: {
+      xs: "100%",
+      sm: "90vh",
+    },
+    // height: "90vh",
   })
 );
 
 export const sxAppBar = {
   height: "100%",
   backgroundColor: "#413e3e00",
-  boxShadow:
-    "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
 };
 
 export const StyledToolbar = styled(Toolbar)({
@@ -89,6 +90,7 @@ export const StyledAction = styled(Box)({
   flexDirection: "column",
   justifyContent: "flex-end",
   alignItems: "center",
-  width: "100%",
+  // width: "100%",
   height: "100%",
+  paddingBottom: "10px",
 });

@@ -18,7 +18,7 @@ import {
 const Navbar: React.FC = () => {
   return (
     <StyledBox flex={1}>
-      <AppBar component="nav" position="static" sx={sxAppBar}>
+      <AppBar component="nav" position="static" sx={sxAppBar} elevation={0}>
         <StyledToolbar>
           <StyledContent>
             <StyledMenuList>

@@ -1,4 +1,4 @@
-import { Box, Card, styled } from "@mui/material";
+import { Card, styled } from "@mui/material";
 import { theme } from "../theme";
 
 export const StyledCard = styled(Card)({
@@ -6,10 +6,11 @@ export const StyledCard = styled(Card)({
   backgroundColor: "#2e2e2e",
   justifyContent: "space-around",
   flexDirection: "column",
-  paddingBottom: "10px",
+  paddingBottom: "11px",
   borderRadius: "10px",
   width: "100%",
   flexWrap: "wrap",
+  flex: 0.4,
 });
 
 export const sxBox = {

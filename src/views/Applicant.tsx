@@ -1,16 +1,30 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { theme } from "../theme";
-import { Applicantt, dashBoardData } from "../Api";
+import { Applicantt, dashBoardData, DashBoardType } from "../Api";
+import { db } from "../firebase-config";
+import { collection, getDocs } from "firebase/firestore";
 import {
   StyledBox,
   StyledCard,
   StyledCircularProgress,
 } from "../styles/ApplicantStyle";
+import { useState, useEffect } from "react";
 
 const Applicant: React.FC = () => {
+  const [applicant, setApplicant] = useState<any>([]);
+  const applicantCollectionRef = collection(db, "applicant");
+
+  useEffect(() => {
+    const getApplicant = async () => {
+      const data = await getDocs(applicantCollectionRef);
+      setApplicant(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getApplicant();
+  }, []);
+
   return (
     <StyledCard>
-      {dashBoardData.applicant.map((data: Applicantt) => {
+      {applicant.map((data: Applicantt) => {
         return (
           <Box
             key={data.id}
@@ -20,6 +34,15 @@ const Applicant: React.FC = () => {
             gap="1rem"
             flexWrap="wrap"
             flex="0 5 auto"
+            // sx={{
+            //   flex: {
+            //     xs: "0 ",
+            //     sm: "0",
+            //     md: "1",
+            //     lg: "1",
+            //     xl: "1",
+            //   },
+            // }}
           >
             <Stack flexWrap="wrap" flex="1 10 auto">
               <Typography

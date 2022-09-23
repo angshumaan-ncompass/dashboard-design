@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { KeyboardArrowDown } from "@mui/icons-material";
 import {
   Avatar,
@@ -26,9 +26,21 @@ import {
   sxTableRowChild,
   sxTableRowHead,
 } from "../styles/InterviewStyle";
-import { dashBoardData, Intervieww } from "../Api";
+import { Intervieww } from "../Api";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase-config";
 
 const Interview: React.FC = () => {
+  const [interview, setInterview] = useState<any>([]);
+  const interviewCollectionRef = collection(db, "interview");
+
+  useEffect(() => {
+    const getInterview = async () => {
+      const data = await getDocs(interviewCollectionRef);
+      setInterview(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getInterview();
+  }, []);
   return (
     <TableContainer component={Paper} sx={sxTableContainer}>
       <Box sx={sxBoxData}>
@@ -47,7 +59,18 @@ const Interview: React.FC = () => {
           </Button>
         </Typography>
       </Box>
-      <StyledTable aria-label="a dense table">
+      <StyledTable
+        aria-label="a dense table"
+        sx={{
+          height: {
+            xl: "80%",
+            lg: "80%",
+            md: "80%",
+            xs: "0",
+            sm: "0",
+          },
+        }}
+      >
         <TableHead>
           <TableRow sx={sxTableRowHead}>
             <StyledTableCell>Candidate Name</StyledTableCell>
@@ -58,7 +81,7 @@ const Interview: React.FC = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {dashBoardData.interview.map((row: Intervieww) => (
+          {interview.map((row: Intervieww) => (
             <TableRow hover={true} key={row.candidateName} sx={sxTableRowChild}>
               <TableCell component="th" scope="row" sx={sxTableCell}>
                 <Stack

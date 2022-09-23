@@ -21,15 +21,15 @@ export const StyledAppBar = styled(AppBar)(
   sx({
     position: "sticky",
     backgroundColor: "#413e3e00",
-    boxShadow: " 0px -6px 8px 6px rgba(0,0,0,0.1)",
-    width: "80vw",
+    width: "90vw",
     margin: "auto",
     flex: 2,
+    elevation: 0,
   })
 );
 
 export const sxStack = {
-  display: { xs: "block", sm: "none" },
+  display: { xs: "block", sm: "block" },
 };
 export const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -52,7 +52,7 @@ export const StyledSearch = styled("div")(({ theme }) => ({
   width: "100%",
   [theme.breakpoints.up("sm")]: {
     // marginLeft: theme.spacing(1),
-    marginLeft: "9px",
+    // marginLeft: "9px",
     width: "62%",
   },
 }));
@@ -95,11 +95,13 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export const sxIconButton = {
   ml: "0.5rem",
-  display: { xs: "block", sm: "block", md: "block" },
+  display: { xs: "block", sm: "block", md: "block", lg: "none" },
   color: "gray",
 };
 
 export const sxStackContent = {
+  paddingTop: "10px",
+  paddingBottom: "10px",
   display: {
     xs: {
       justifyContent: "space-around",
@@ -119,7 +121,9 @@ export const StyledBoxContent = styled(Box)(() => ({
 }));
 
 export const sxStackInput = {
-  display: { xs: "none", sm: "none", md: "none", lg: "flex" },
+  paddingTop: "10px",
+  paddingBottom: "10px",
+  // display: { xs: "none", sm: "none", md: "none", lg: "flex" },
 };
 
 export const StyledAvatar = styled(Avatar)(({ theme }) => ({
@@ -135,7 +139,7 @@ export const sxSvg = {
 };
 
 export const sxDrawer = {
-  display: { xs: "block", sm: "none" },
+  display: { xs: "block", sm: "block", md: "block", lg: "none" },
   "& .MuiDrawer-paper": {
     boxSizing: "border-box",
     width: 240,

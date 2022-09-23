@@ -5,11 +5,12 @@ export const StyledCardBox = styled(Card)({
   backgroundColor: "#2e2e2e",
   justifyContent: "space-around",
   flexDirection: "column",
-  paddingBottom: "16px",
+  paddingBottom: "10px",
   borderRadius: "10px",
   width: "100%",
   flexWrap: "wrap",
-  gap: "1rem",
+  gap: "0.8rem",
+  flex: 0.3,
 });
 
 export const sxContent = {
@@ -34,8 +35,8 @@ export const sxIconButton = {
 };
 
 export const sxAvatar = {
-  width: "3.4rem",
-  height: "3.8rem",
+  width: "17%",
+  height: "100%",
   borderRadius: "25px",
   backgroundColor: "white",
   mb: "0.2rem",

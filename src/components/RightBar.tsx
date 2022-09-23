@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ui from "../assets/images/ui.png";
 import { MoreHoriz } from "@mui/icons-material";
 import { theme } from "../theme";
-import { dashBoardData, Job } from "../Api";
+import { Job } from "../Api";
 import {
   Box,
   CardActions,
@@ -28,8 +28,20 @@ import {
 } from "../styles/RightBarStyle";
 import VerticalBar from "../views/VerticalBar";
 import Instructor from "../views/Instructor";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase-config";
 
 const RightBar: React.FC = () => {
+  const [job, setJob] = useState<any>([]);
+  const jobCollectionRef = collection(db, "job");
+
+  useEffect(() => {
+    const getJob = async () => {
+      const data = await getDocs(jobCollectionRef);
+      setJob(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getJob();
+  }, []);
   return (
     <StyledBox>
       <Stack
@@ -45,7 +57,7 @@ const RightBar: React.FC = () => {
           SEE ALL
         </Typography>
       </Stack>
-      {dashBoardData.job.map((data: Job) => {
+      {job.map((data: Job) => {
         return (
           <StyledCard key={data.id}>
             <Box sx={sxBox}>
@@ -54,7 +66,8 @@ const RightBar: React.FC = () => {
                 flexDirection={"row"}
                 alignItems={"flex-start"}
                 flexWrap={"wrap"}
-                pt={"15px"}
+                // pt={"15px"}
+                height="100%"
               >
                 <CardMedia
                   component="img"
@@ -107,7 +120,7 @@ const RightBar: React.FC = () => {
         );
       })}
 
-      <StyledCard>
+      <StyledCard sx={{ maxHeight: "50px" }}>
         <StyledCardContent>
           <Stack justifyContent={"space-around"} alignItems={"flex-start"}>
             <CardMedia

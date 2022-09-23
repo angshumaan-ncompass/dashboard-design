@@ -49,7 +49,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <StyledAppBar>
+    <StyledAppBar elevation={0}>
       <StyledToolbar>
         <Stack
           position="absolute"
@@ -83,6 +83,53 @@ const Header: React.FC = () => {
               <Box onClick={handleDrawerToggle}>
                 <Avatar alt="leaf" src={leaf} sx={sxLeaf} />
                 <Divider />
+                <Stack
+                  justifyContent={"center"}
+                  alignItems="center"
+                  direction={"row"}
+                  gap="1rem"
+                  marginTop={"1rem"}
+                  sx={{
+                    display: {
+                      xs: "flex",
+                      sm: "none",
+                      md: "none",
+                      lg: "none",
+                    },
+                  }}
+                >
+                  <StyledAvatar
+                    alt="notification"
+                    variant="circular"
+                    sx={{
+                      backgroundColor: {
+                        xs: "black",
+                      },
+                    }}
+                  >
+                    <NotificationAdd sx={sxSvg} />
+                  </StyledAvatar>
+                  <StyledAvatar
+                    alt="settings"
+                    variant="circular"
+                    sx={{
+                      backgroundColor: {
+                        xs: "black",
+                      },
+                    }}
+                    // sx={{
+                    //   display: {
+                    //     xs: "none",
+                    //     sm: "flex",
+                    //     md: "flex",
+                    //     lg: "flex",
+                    //     // xl:"flex"
+                    //   },
+                    // }}
+                  >
+                    <SettingsTwoTone sx={sxSvg} />
+                  </StyledAvatar>
+                </Stack>
                 <List>
                   {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
@@ -140,12 +187,44 @@ const Header: React.FC = () => {
             </SearchIconWrapper>
             <StyledInputBase placeholder="Search Game" />
           </StyledSearch>
-          <StyledAvatar alt="notification" variant="circular">
-            <NotificationAdd sx={sxSvg} />
-          </StyledAvatar>
-          <StyledAvatar alt="settings" variant="circular">
-            <SettingsTwoTone sx={sxSvg} />
-          </StyledAvatar>
+
+          <Stack
+            justifyContent={"center"}
+            alignItems="center"
+            direction={"row"}
+            gap="1rem"
+          >
+            <StyledAvatar
+              alt="notification"
+              variant="circular"
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "flex",
+                  // xl:"flex"
+                },
+              }}
+            >
+              <NotificationAdd sx={sxSvg} />
+            </StyledAvatar>
+            <StyledAvatar
+              alt="settings"
+              variant="circular"
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "flex",
+                  // xl:"flex"
+                },
+              }}
+            >
+              <SettingsTwoTone sx={sxSvg} />
+            </StyledAvatar>
+          </Stack>
         </Stack>
       </StyledToolbar>
     </StyledAppBar>

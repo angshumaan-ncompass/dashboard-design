@@ -14,6 +14,8 @@ export const StyledCard = styled(Card)(() => ({
   flex: "0 10 auto",
   gap: "1rem",
   borderRadius: "10px",
+  // height: "100%",
+  alignContent: "center",
 }));
 
 export const spin = keyframes({

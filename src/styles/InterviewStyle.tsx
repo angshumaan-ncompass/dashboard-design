@@ -4,6 +4,19 @@ import { theme } from "../theme";
 export const sxTableContainer = {
   borderRadius: "10px",
   backgroundColor: "#2e2e2e",
+
+  flex: {
+    xs: "0",
+    sm: "0",
+    md: "5",
+    lg: "5",
+    xl: "5",
+  },
+  // height: {
+  //   md: "80%",
+  //   lg: "80%",
+  //   xl: "80%",
+  // },
 };
 export const sxBoxData = {
   display: "flex",
@@ -33,6 +46,7 @@ export const StyledTable = styled(Table)({
   ".MuiTableRow-root.MuiTableRow-hover:hover:nth-child(n+1) td": {
     backgroundColor: "#bebebe26",
     cursor: "pointer",
+    // padding: "10px",
   },
 
   ".MuiTableRow-root.MuiTableRow-hover:hover th": {

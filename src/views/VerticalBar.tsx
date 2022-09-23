@@ -1,4 +1,4 @@
-import { Box, Card, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import {
   StyledCard,
   sxBox,

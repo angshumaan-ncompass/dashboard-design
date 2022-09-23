@@ -16,7 +16,7 @@ function App() {
           justifyContent="space-around"
           flexWrap={"wrap"}
           alignItems="flex-start"
-          width="80vw"
+          width="90vw"
           margin="auto"
           flex="4"
         >
