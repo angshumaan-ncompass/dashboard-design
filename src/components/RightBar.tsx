@@ -28,20 +28,20 @@ import {
 } from "../styles/RightBarStyle";
 import VerticalBar from "../views/VerticalBar";
 import Instructor from "../views/Instructor";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase-config";
+// import { collection, getDocs } from "firebase/firestore";
+// import { db } from "../firebase-config";
 
 const RightBar: React.FC = () => {
-  const [job, setJob] = useState<any>([]);
-  const jobCollectionRef = collection(db, "job");
+  // const [job, setJob] = useState<any>([]);
+  // const jobCollectionRef = collection(db, "job");
 
-  useEffect(() => {
-    const getJob = async () => {
-      const data = await getDocs(jobCollectionRef);
-      setJob(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getJob();
-  }, [jobCollectionRef]);
+  // useEffect(() => {
+  //   const getJob = async () => {
+  //     const data = await getDocs(jobCollectionRef);
+  //     setJob(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getJob();
+  // }, [jobCollectionRef]);
   return (
     <StyledBox>
       <Stack

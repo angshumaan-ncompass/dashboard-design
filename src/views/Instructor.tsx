@@ -7,10 +7,10 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { collection, getDocs } from "firebase/firestore";
+// import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { Board, dashBoardData } from "../Api";
-import { db } from "../firebase-config";
+// import { db } from "../firebase-config";
 import {
   StyledCardBox,
   sxAvatar,
@@ -20,16 +20,16 @@ import {
 import { theme } from "../theme";
 
 const Instructor: React.FC = () => {
-  const [avatar, setAvatar] = useState<any>([]);
-  const instructorCollectionRef = collection(db, "instructor");
+  // const [avatar, setAvatar] = useState<any>([]);
+  // const instructorCollectionRef = collection(db, "instructor");
 
-  useEffect(() => {
-    const getInstructor = async () => {
-      const data = await getDocs(instructorCollectionRef);
-      setAvatar(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getInstructor();
-  }, [instructorCollectionRef]);
+  // useEffect(() => {
+  //   const getInstructor = async () => {
+  //     const data = await getDocs(instructorCollectionRef);
+  //     setAvatar(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getInstructor();
+  // }, [instructorCollectionRef]);
 
   return (
     <StyledCardBox>

@@ -1,8 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { theme } from "../theme";
 import { Applicantt, dashBoardData } from "../Api";
-import { db } from "../firebase-config";
-import { collection, getDocs } from "firebase/firestore";
+// import { db } from "../firebase-config";
+// import { collection, getDocs } from "firebase/firestore";
 import {
   StyledBox,
   StyledCard,
@@ -11,16 +11,16 @@ import {
 import { useState, useEffect } from "react";
 
 const Applicant: React.FC = () => {
-  const [applicant, setApplicant] = useState<any>([]);
-  const applicantCollectionRef = collection(db, "applicant");
+  // const [applicant, setApplicant] = useState<any>([]);
+  // const applicantCollectionRef = collection(db, "applicant");
 
-  useEffect(() => {
-    const getApplicant = async () => {
-      const data = await getDocs(applicantCollectionRef);
-      setApplicant(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getApplicant();
-  }, [applicantCollectionRef]);
+  // useEffect(() => {
+  //   const getApplicant = async () => {
+  //     const data = await getDocs(applicantCollectionRef);
+  //     setApplicant(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getApplicant();
+  // }, [applicantCollectionRef]);
 
   return (
     <StyledCard

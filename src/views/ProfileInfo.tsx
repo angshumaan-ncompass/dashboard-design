@@ -1,7 +1,7 @@
-import { collection, getDocs } from "firebase/firestore";
+// import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { dashBoardData, Profile } from "../Api";
-import { db } from "../firebase-config";
+// import { db } from "../firebase-config";
 import {
   StyleBackgroundColorCircle,
   StyledButton,
@@ -20,16 +20,16 @@ import {
 } from "../styles/ProfileStyle";
 
 const ProfileInfo: React.FC = () => {
-  const [profile, setProfile] = useState<any>([]);
-  const profileCollectionRef = collection(db, "profile");
+  // const [profile, setProfile] = useState<any>([]);
+  // const profileCollectionRef = collection(db, "profile");
 
-  useEffect(() => {
-    const getProfile = async () => {
-      const data = await getDocs(profileCollectionRef);
-      setProfile(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getProfile();
-  }, [profileCollectionRef]);
+  // useEffect(() => {
+  //   const getProfile = async () => {
+  //     const data = await getDocs(profileCollectionRef);
+  //     setProfile(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getProfile();
+  // }, [profileCollectionRef]);
   return (
     <StyledCard
       sx={{

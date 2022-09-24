@@ -27,20 +27,20 @@ import {
   sxTableRowHead,
 } from "../styles/InterviewStyle";
 import { dashBoardData, Intervieww } from "../Api";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase-config";
+// import { collection, getDocs } from "firebase/firestore";
+// import { db } from "../firebase-config";
 
 const Interview: React.FC = () => {
-  const [interview, setInterview] = useState<any>([]);
-  const interviewCollectionRef = collection(db, "interview");
+  // const [interview, setInterview] = useState<any>([]);
+  // const interviewCollectionRef = collection(db, "interview");
 
-  useEffect(() => {
-    const getInterview = async () => {
-      const data = await getDocs(interviewCollectionRef);
-      setInterview(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getInterview();
-  }, [interviewCollectionRef]);
+  // useEffect(() => {
+  //   const getInterview = async () => {
+  //     const data = await getDocs(interviewCollectionRef);
+  //     setInterview(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getInterview();
+  // }, [interviewCollectionRef]);
   return (
     <TableContainer component={Paper} sx={sxTableContainer}>
       <Box sx={sxBoxData}>
