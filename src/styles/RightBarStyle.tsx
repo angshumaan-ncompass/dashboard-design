@@ -111,7 +111,7 @@ export const sxIconButton = {
   margin: "0px",
   // padding: "0px",
   width: "10%",
-  paddingRight: "0.5rem",
+  paddingRight: "1rem",
 };
 
 export const sxMoreHoriz = {

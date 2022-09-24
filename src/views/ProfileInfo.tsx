@@ -113,7 +113,7 @@ const ProfileInfo: React.FC = () => {
                 <StyledButton
                   sx={{
                     fontSize: {
-                      xs: 14,
+                      xl: 14,
                     },
                   }}
                 >

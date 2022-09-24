@@ -35,9 +35,12 @@ export const sxIconButton = {
 };
 
 export const sxAvatar = {
+  // width: "17%",
+  // height: "100%",
+  // width: "4rem",
   width: "17%",
-  height: "100%",
-  borderRadius: "25px",
+  height: "4.7rem",
+  borderRadius: "30px",
   backgroundColor: "white",
   mb: "0.2rem",
   // ml: "0.5rem",
