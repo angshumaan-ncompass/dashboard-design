@@ -1,17 +1,11 @@
 import { MoreHoriz } from "@mui/icons-material";
-import {
-  Avatar,
-  Box,
-  CardContent,
-  IconButton,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, CardContent, IconButton, Stack, Typography } from "@mui/material";
 // import { collection, getDocs } from "firebase/firestore";
 // import React, { useEffect, useState } from "react";
 import { Board, dashBoardData } from "../Api";
 // import { db } from "../firebase-config";
 import {
+  StyledAvatar,
   StyledCardBox,
   sxAvatar,
   sxContent,
@@ -68,7 +62,7 @@ const Instructor: React.FC = () => {
       >
         {dashBoardData.board.map((item: Board) => {
           return (
-            <Avatar
+            <StyledAvatar
               key={item.id}
               alt="Remy Sharp"
               src={item.image}

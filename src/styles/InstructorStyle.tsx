@@ -1,4 +1,4 @@
-import { Card, styled } from "@mui/material";
+import { Avatar, Card, styled } from "@mui/material";
 
 export const StyledCardBox = styled(Card)({
   display: "flex",
@@ -11,6 +11,13 @@ export const StyledCardBox = styled(Card)({
   flexWrap: "wrap",
   gap: "0.8rem",
   flex: 0.3,
+});
+
+export const StyledAvatar = styled(Avatar)({
+  ".MuiAvatar-img": {
+    width: "80%",
+    height: "4.7rem",
+  },
 });
 
 export const sxContent = {
