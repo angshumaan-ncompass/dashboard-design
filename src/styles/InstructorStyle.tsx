@@ -3,20 +3,22 @@ import { Avatar, Card, styled } from "@mui/material";
 export const StyledCardBox = styled(Card)({
   display: "flex",
   backgroundColor: "#2e2e2e",
-  justifyContent: "space-around",
+  justifyContent: "space-evenly",
   flexDirection: "column",
-  paddingBottom: "10px",
+  paddingBottom: "5px",
+  paddingTop: "5px",
   borderRadius: "10px",
   width: "100%",
   flexWrap: "wrap",
+  minHeight: "18%",
   gap: "0.8rem",
   flex: 0.3,
 });
 
 export const StyledAvatar = styled(Avatar)({
   ".MuiAvatar-img": {
-    width: "80%",
-    height: "4.7rem",
+    // width: "80%",
+    // height: "4.7rem",
   },
 });
 
@@ -45,10 +47,14 @@ export const sxAvatar = {
   // width: "17%",
   // height: "100%",
   // width: "4rem",
-  width: "17%",
-  height: "4.7rem",
+  // width: "17%",
+  // height: "4.7rem",
+  // width: "20%%",
+  // height: "90%",
   borderRadius: "30px",
+  height: "100%",
+  // width: "11%",
   backgroundColor: "white",
-  mb: "0.2rem",
+  mb: "0.5rem",
   // ml: "0.5rem",
 };

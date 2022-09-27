@@ -15,7 +15,7 @@ export const StyledBox = styled(Box)(
     flexDirection: "column",
     justifyContent: "flex-start",
     alignItems: "flex-start",
-    flexWrap: "wrap",
+    // flexWrap: "wrap",
     bgcolor: "#413e3e00",
     // height: "100%",
     pt: "10px",

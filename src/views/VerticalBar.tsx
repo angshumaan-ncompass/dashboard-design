@@ -55,11 +55,18 @@ const VerticalBar = () => {
           width="90%"
           flexWrap="wrap"
         >
+          <Typography component={"div"} height="50%" sx={sxTypography} />
+          <Typography component={"div"} height="60%" sx={sxTypography} />
+          <Typography component={"div"} height="80%" sx={sxTypography} />
+          <Typography component={"div"} height="60%" sx={sxTypography} />
+          <Typography component={"div"} height="50%" sx={sxTypography} />
+
+          {/* 
           <Typography component={"div"} height="3rem" sx={sxTypography} />
           <Typography component={"div"} height="4rem" sx={sxTypography} />
           <Typography component={"div"} height="5rem" sx={sxTypography} />
           <Typography component={"div"} height="4rem" sx={sxTypography} />
-          <Typography component={"div"} height="3rem" sx={sxTypography} />
+          <Typography component={"div"} height="3rem" sx={sxTypography} /> */}
         </Stack>
       </Box>
       <Box sx={sxWrapper}>

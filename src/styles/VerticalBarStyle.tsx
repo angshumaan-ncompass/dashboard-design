@@ -4,12 +4,12 @@ import { theme } from "../theme";
 export const StyledCard = styled(Card)({
   display: "flex",
   backgroundColor: "#2e2e2e",
-  justifyContent: "space-around",
+  justifyContent: "space-evenly",
   flexDirection: "column",
   paddingBottom: "11px",
   borderRadius: "10px",
   width: "100%",
-  flexWrap: "wrap",
+  // flexWrap: "wrap",
   flex: 0.4,
 });
 
@@ -32,6 +32,7 @@ export const sxWrapper = {
 
 export const sxTypography = {
   width: "1rem",
+  // width: "1rem",
   borderRadius: "20px",
   background: "linear-gradient(to bottom, #ff6347 30%, #666699 105%)",
 };

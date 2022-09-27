@@ -59,7 +59,7 @@ const RightBar: React.FC = () => {
       </Stack>
       {dashBoardData.job.map((data: Job) => {
         return (
-          <StyledCard key={data.id}>
+          <StyledCard key={data.id} sx={{ minHeight: "15%" }}>
             <Box sx={sxBox}>
               <Stack
                 justifyContent={"space-around"}

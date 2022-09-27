@@ -30,10 +30,10 @@ const Instructor: React.FC = () => {
       <Stack
         flexDirection={"row"}
         flexWrap={"wrap"}
-        justifyContent={"space-around"}
+        justifyContent={"center"}
         width="100%"
         // margin="auto"
-        pt="10px"
+        // pt="10px"
       >
         <CardContent sx={sxContent}>
           <Box>
@@ -56,7 +56,7 @@ const Instructor: React.FC = () => {
       <Stack
         direction="row"
         alignItems={"center"}
-        justifyContent={"space-evenly"}
+        justifyContent={"space-around"}
         // gap={"0.7rem"}
         flexWrap="wrap"
       >
