@@ -26,7 +26,7 @@ export const sxBoxData = {
   pl: "1.5rem",
   pr: "1.5rem",
   pt: "0.9rem",
-  // pb: "0.9rem",
+  paddingBottom: "1rem",
   backgroundColor: "#2e2e2e",
 };
 
