@@ -40,7 +40,7 @@ export const sxIconButton = {
   margin: "0px",
   padding: "0px",
   paddingRight: "0.7rem",
-  width: "13%",
+  width: "15%",
 };
 
 export const sxAvatar = {
