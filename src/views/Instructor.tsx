@@ -36,13 +36,13 @@ const Instructor: React.FC = () => {
         // pt="10px"
       >
         <CardContent sx={sxContent}>
-          <Box>
+          <Box width={"89%"} margin="auto">
             <Typography
               component="div"
               variant="subtitle1"
               color={theme.palette.primary.main}
               fontSize="0.9rem"
-              paddingLeft={"7px"}
+              // paddingLeft={"7px"}
             >
               Board Instructor
             </Typography>
