@@ -69,11 +69,11 @@ export const sxTableRowHead = {
     borderColor: theme.palette.secondary.dark,
     paddingLeft: "1.5rem",
     fontSize: {
-      xs: "0.6rem",
-      sm: "0.6rem",
-      md: "0.6rem",
-      lg: "0.6rem",
-      xl: "0.6rem",
+      xs: "0.7rem",
+      sm: "0.7rem",
+      md: "0.7rem",
+      lg: "0.7rem",
+      xl: "0.7rem",
     },
   },
 };
