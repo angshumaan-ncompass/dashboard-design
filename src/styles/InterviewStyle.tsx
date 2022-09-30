@@ -26,7 +26,7 @@ export const sxBoxData = {
   pl: "1.5rem",
   pr: "1.5rem",
   pt: "0.9rem",
-  // paddingBottom: "1rem",
+  paddingBottom: "0.3rem",
   backgroundColor: "#2e2e2e",
 };
 
@@ -99,12 +99,14 @@ export const sxTableRowChild = {
       pl: "1.5rem",
       pr: "1rem",
     },
+
   "&:nth-child(n+1) > td:nth-child(n+5) .MuiTypography-caption": {
     borderRadius: "5px",
     pt: "0.3rem",
     pb: "0.3rem",
     pl: "0.4rem",
     pr: "0.5rem",
+
     // fontSize: "0.6rem",
 
     fontSize: {
@@ -118,6 +120,7 @@ export const sxTableRowChild = {
   "&:nth-child(1) > td:nth-child(5) .MuiTypography-caption": {
     backgroundColor: "#1b97f52c",
     color: "#1b98f5",
+
     fontSize: {
       xs: "0.6rem",
       sm: "0.6rem",
@@ -140,6 +143,7 @@ export const sxTableRowChild = {
 
 export const sxTableCell = {
   // fontSize: "0.8rem",
+
   fontSize: {
     xs: "0.8rem",
     sm: "0.8rem",

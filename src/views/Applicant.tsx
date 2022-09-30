@@ -28,9 +28,9 @@ const Applicant: React.FC = () => {
         flex: {
           xs: "0 ",
           sm: "0",
-          md: "2",
-          lg: "2",
-          xl: "2",
+          md: "1.4",
+          lg: "1.4",
+          xl: "1.4",
         },
       }}
     >
