@@ -10,7 +10,13 @@ import { theme } from "../theme";
 const VerticalBar = () => {
   return (
     <StyledCard>
-      <Box sx={sxBox} height="25%" width="90%" margin={"auto"}>
+      <Box
+        sx={sxBox}
+        height="25%"
+        width="90%"
+        margin={"auto"}
+        alignItems="center"
+      >
         <Stack py="10px">
           <Typography
             component="div"
@@ -28,6 +34,7 @@ const VerticalBar = () => {
           spacing={"2"}
           alignItems={"flex-end"}
           width="10%"
+          justifyContent={"space-between"}
           color={theme.palette.primary.light}
           flexWrap="wrap"
         >

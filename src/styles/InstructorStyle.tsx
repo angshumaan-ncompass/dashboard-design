@@ -6,7 +6,7 @@ export const StyledCardBox = styled(Card)({
   justifyContent: "space-evenly",
   flexDirection: "column",
   paddingBottom: "5px",
-  paddingTop: "5px",
+  // paddingTop: "5px",
   borderRadius: "10px",
   width: "100%",
   flexWrap: "wrap",
