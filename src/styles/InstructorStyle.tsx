@@ -26,7 +26,7 @@ export const sxContent = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  marginLeft: "0.7rem",
+  // marginLeft: "0.7rem",
   flex: "1 0 auto",
   p: "0px",
   "&.MuiCardContent-root:last-child": {
