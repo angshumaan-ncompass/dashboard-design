@@ -4,7 +4,7 @@ import { theme } from "../theme";
 export const sxTableContainer = {
   borderRadius: "10px",
   backgroundColor: "#2e2e2e",
-  paddingTop: "2rem",
+  // paddingTop: "2rem",
 
   flex: {
     xs: "0",
@@ -26,7 +26,7 @@ export const sxBoxData = {
   pl: "1.5rem",
   pr: "1.5rem",
   pt: "0.9rem",
-  paddingBottom: "1rem",
+  // paddingBottom: "1rem",
   backgroundColor: "#2e2e2e",
 };
 
@@ -73,7 +73,7 @@ export const sxTableRowHead = {
       sm: "0.6rem",
       md: "0.6rem",
       lg: "0.6rem",
-      xl: "1rem",
+      xl: "0.6rem",
     },
   },
 };
@@ -112,7 +112,7 @@ export const sxTableRowChild = {
       sm: "0.6rem",
       md: "0.6rem",
       lg: "0.6rem",
-      xl: "1rem",
+      xl: "0.6rem",
     },
   },
   "&:nth-child(1) > td:nth-child(5) .MuiTypography-caption": {
@@ -123,7 +123,7 @@ export const sxTableRowChild = {
       sm: "0.6rem",
       md: "0.6rem",
       lg: "0.6rem",
-      xl: "1rem",
+      xl: "0.6rem",
     },
   },
   "&:nth-child(2) > td:nth-child(5) .MuiTypography-caption": {
@@ -145,7 +145,7 @@ export const sxTableCell = {
     sm: "0.8rem",
     md: "0.8rem",
     lg: "0.8rem",
-    xl: "1.2rem",
+    xl: "0.8rem",
   },
 };
 export const sxAvatar = { width: "20%", height: "20%" };

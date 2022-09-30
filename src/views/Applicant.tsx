@@ -55,7 +55,7 @@ const Applicant: React.FC = () => {
                     sm: "0.7rem",
                     md: "0.7rem",
                     lg: "0.7rem",
-                    xl: "1rem",
+                    xl: "0.7rem",
                   },
                 }}
               >
@@ -70,7 +70,7 @@ const Applicant: React.FC = () => {
                     sm: "1.3rem",
                     md: "1.3rem",
                     lg: "1.3rem",
-                    xl: "2rem",
+                    xl: "1.3rem",
                   },
                 }}
               >
@@ -85,7 +85,7 @@ const Applicant: React.FC = () => {
                     sm: "0.7rem",
                     md: "0.7rem",
                     lg: "0.7rem",
-                    xl: "1rem",
+                    xl: "0.7rem",
                   },
                 }}
               >

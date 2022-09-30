@@ -89,8 +89,8 @@ const ProfileInfo: React.FC = () => {
                       xs: "0.9rem",
                       sm: "0.9rem",
                       md: "0.9rem",
-                      lg: "1.2rem",
-                      xl: "1.2rem",
+                      lg: "0.9rem",
+                      xl: "0.9rem",
                     },
                   }}
                 >
@@ -100,8 +100,8 @@ const ProfileInfo: React.FC = () => {
                         xs: "0.9rem",
                         sm: "0.9rem",
                         md: "0.9rem",
-                        lg: "1.2rem",
-                        xl: "1.2rem",
+                        lg: "0.9rem",
+                        xl: "0.9rem",
                       },
                     }}
                   >
@@ -111,11 +111,11 @@ const ProfileInfo: React.FC = () => {
                   <StyledCardTypography>Total Points 530</StyledCardTypography>
                 </StyledCardData>
                 <StyledButton
-                  sx={{
-                    fontSize: {
-                      xl: 14,
-                    },
-                  }}
+                // sx={{
+                //   fontSize: {
+                //     xl: 14,
+                //   },
+                // }}
                 >
                   View Details
                 </StyledButton>
