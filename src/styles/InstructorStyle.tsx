@@ -52,9 +52,14 @@ export const sxAvatar = {
   // width: "20%%",
   // height: "90%",
   borderRadius: "30px",
+  // width: "17%",
   height: "100%",
   // width: "11%",
   backgroundColor: "white",
   mb: "0.5rem",
+  width: {
+    lg: "40px",
+    xl: "17%",
+  },
   // ml: "0.5rem",
 };

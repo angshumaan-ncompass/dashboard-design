@@ -175,7 +175,16 @@ const RightBar: React.FC = () => {
                 variant="caption"
                 component="div"
                 color={theme.palette.primary.light}
-                fontSize={"0.53rem"}
+                // fontSize={"0.53rem"}
+                sx={{
+                  fontSize: {
+                    xs: "0.53rem",
+                    sm: "0.53rem",
+                    md: "0.53rem",
+                    lg: "0.53rem",
+                    xl: "0.69rem",
+                  },
+                }}
               >
                 Soylent Corp
               </Typography>

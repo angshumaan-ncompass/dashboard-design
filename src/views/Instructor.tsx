@@ -56,9 +56,10 @@ const Instructor: React.FC = () => {
       <Stack
         direction="row"
         alignItems={"center"}
-        justifyContent={"space-around"}
+        justifyContent={"space-evenly"}
         // gap={"0.7rem"}
         flexWrap="wrap"
+        height="55%"
       >
         {dashBoardData.board.map((item: Board) => {
           return (

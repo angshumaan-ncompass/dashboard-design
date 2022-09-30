@@ -17,6 +17,8 @@ export const sxBox = {
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
+  // width: "90%",
+  // margin: "auto",
 };
 
 export const sxWrapper = {

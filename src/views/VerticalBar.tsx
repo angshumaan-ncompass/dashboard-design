@@ -10,7 +10,7 @@ import { theme } from "../theme";
 const VerticalBar = () => {
   return (
     <StyledCard>
-      <Box sx={sxBox}>
+      <Box sx={sxBox} height="25%">
         <Stack py="10px" pl="15px">
           <Typography
             component="div"
@@ -22,7 +22,7 @@ const VerticalBar = () => {
           </Typography>
         </Stack>
       </Box>
-      <Box sx={sxBox}>
+      <Box sx={sxBox} height="60%">
         <Stack
           direction={"column"}
           spacing={"2"}
@@ -69,7 +69,7 @@ const VerticalBar = () => {
           <Typography component={"div"} height="3rem" sx={sxTypography} /> */}
         </Stack>
       </Box>
-      <Box sx={sxWrapper}>
+      <Box sx={sxWrapper} height="15%">
         <Typography variant="caption" fontSize="0.7rem">
           Sat
         </Typography>

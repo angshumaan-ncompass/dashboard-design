@@ -56,7 +56,9 @@ export const StyledCardContent = styled(Box)({
   display: "flex",
   flexDirection: "row",
   width: "80%",
-  paddingLeft: "0.8rem",
+  paddingLeft: "0.5rem",
+  height: "100%",
+  alignItems: "flex-end",
 });
 
 export const sxCardMedia = {
@@ -101,7 +103,7 @@ export const sxCardImage = {
 
 export const sxCardData = {
   flex: "1 0 auto",
-  "&:last-child": { pr: "22px", pt: "10px", pb: "10px" },
+  "&:last-child": { pr: "22px", pt: "10px", pb: "1px" },
   pl: "0.3rem",
 };
 
