@@ -36,7 +36,7 @@ const Instructor: React.FC = () => {
         // pt="10px"
       >
         <CardContent sx={sxContent}>
-          <Box width={"89%"} margin="auto">
+          <Box width={"89%"} margin="auto" pt="0.5rem">
             <Typography
               component="div"
               variant="subtitle1"

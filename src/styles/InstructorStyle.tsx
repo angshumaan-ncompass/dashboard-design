@@ -58,7 +58,8 @@ export const sxAvatar = {
   backgroundColor: "white",
   mb: "0.5rem",
   width: {
-    lg: "40px",
+    md: "18%",
+    lg: "18%",
     xl: "17%",
   },
   // ml: "0.5rem",
